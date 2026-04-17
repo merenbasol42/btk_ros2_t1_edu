@@ -1,0 +1,5 @@
+practice_ws/build/
+practice_ws/install/
+practice_ws/log/
+
+**/__pycache__/
