@@ -27,7 +27,9 @@ setup(
             "calistirA = deneme1_pkg.a:main",
             "kamp_kontrol = deneme1_pkg.kamp_kontrol:main",
             "srv_deneme = deneme1_pkg.srv_deneme:main",
-            "client_deneme = deneme1_pkg.client_deneme:main"
+            "client_deneme = deneme1_pkg.client_deneme:main",
+            "motor = deneme1_pkg.motor:main",
+            "kontrolcu = deneme1_pkg.kontrolcu:main",
 
         ],
     },
