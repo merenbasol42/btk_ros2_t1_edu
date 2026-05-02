@@ -13,12 +13,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 install(
-  DIRECTORY msg
+  DIRECTORY msg srv
   DESTINATION share/${PROJECT_NAME}
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorBilgileri.msg"
+  "srv/ToplamaUc.srv"
+
 )
 
 ament_export_dependencies(rosidl_default_runtime)

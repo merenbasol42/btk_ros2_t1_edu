@@ -31,6 +31,7 @@ setup(
             "motor = deneme1_pkg.motor:main",
             "kontrolcu = deneme1_pkg.kontrolcu:main",
             "arayuz_deneme = deneme1_pkg.arayuz_deneme:main",
+            "arayuz_srv_deneme = deneme1_pkg.arayuz_srv_deneme:main",
 
         ],
     },
