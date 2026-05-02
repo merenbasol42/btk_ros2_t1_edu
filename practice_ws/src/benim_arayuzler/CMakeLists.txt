@@ -19,7 +19,13 @@ install(
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MotorBilgileri.msg"
+  "msg/SensorVerisi.msg"
+  "msg/AcilDurum.msg"
+
+  
   "srv/ToplamaUc.srv"
+  "srv/Esik.srv"
+
 
 )
 
