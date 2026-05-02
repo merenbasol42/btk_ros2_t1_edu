@@ -30,6 +30,7 @@ setup(
             "client_deneme = deneme1_pkg.client_deneme:main",
             "motor = deneme1_pkg.motor:main",
             "kontrolcu = deneme1_pkg.kontrolcu:main",
+            "arayuz_deneme = deneme1_pkg.arayuz_deneme:main",
 
         ],
     },

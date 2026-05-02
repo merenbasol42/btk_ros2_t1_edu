@@ -587,14 +587,18 @@ float32 distance_remaining
 
 ```cmake
 find_package(rosidl_default_generators REQUIRED)
-find_package(geometry_msgs REQUIRED)   # başka paket mesajı kullanıyorsanız
+
+install(
+  DIRECTORY msg
+  DESTINATION share/${PROJECT_NAME}
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Sensor.msg"
-  "srv/ComputeArea.srv"
-  "action/Navigate.action"
-  DEPENDENCIES geometry_msgs           # dışarıdan tip kullanıyorsanız ekleyin
+  "msg/MotorBilgileri.msg"
 )
+
+ament_export_dependencies(rosidl_default_runtime)
+
 ```
 
 **`package.xml`**
