@@ -22,6 +22,7 @@ class MyNode(Node):
         super().__init__("dolas")
         self.hiz_yayimlayicisi = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
         self.create_subscription(Pose, "turtle1/pose", self.pose_geldi, 10)
+        
         self.declare_parameter("lin_hiz", 4.0)
         self.lin_hiz: float = self.get_parameter("lin_hiz").value
         self.add_on_set_parameters_callback(self.on_param)
