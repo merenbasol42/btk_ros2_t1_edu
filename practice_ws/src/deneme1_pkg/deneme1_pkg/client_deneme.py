@@ -4,15 +4,13 @@ import rclpy
 from rclpy.node import Node
 from rclpy.task import Future
 
-from example_interfaces.srv import SetBool
+from example_interfaces.srv import AddTwoInts
 
 
 
 class MyNode(Node):
     def __init__(self):
         super().__init__("benim_node")
-        res = SetBool.Response()
-        res.success = True
         self.client = self.create_client(AddTwoInts, "carpim")
         
         while not self.client.wait_for_service(0.5):
